@@ -99,6 +99,14 @@ border-radius:14px;
 object-fit:cover;
 }
 
+.about-img {
+    max-height: 350px;   /* adjust this value */
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+
 .text h2{
 font-size:2.7rem;
 margin-bottom:20px;
@@ -240,7 +248,7 @@ margin:20px 0;
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(4,1fr);
+grid-template-columns:repeat(3,1fr);
 gap:12px;
 padding:0 8% 80px;
 }
@@ -254,7 +262,7 @@ padding:0 8% 80px;
     justify-content:center;
     align-items:center;
     text-align:center;
-    min-height:320px;
+    min-height:220px;
     border:1px solid #222;
     transition:.3s ease;
     }
