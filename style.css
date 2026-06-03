@@ -447,6 +447,13 @@ a{
   padding:26px;
 }
 
+.learning-technique-img{
+  object-position: center 30%;
+}
+
+.creating-consistency-img{
+  object-position: center 40%;
+}
 .card-content i{
   width:44px;
   height:44px;
@@ -465,6 +472,84 @@ a{
   margin-bottom:12px;
 }
 
+/* ================= JOURNEY ================= */
+
+.journey-section{
+  padding-top:80px;
+}
+
+.journey-section .section-heading p:not(.eyebrow){
+  max-width:720px;
+  margin:18px auto 0;
+  color:var(--muted);
+}
+
+.journey-grid{
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  gap:28px;
+  align-items:center;
+  margin-top:55px;
+}
+
+.journey-card{
+  position:relative;
+  overflow:hidden;
+  border-radius:var(--radius);
+  border:1px solid var(--line);
+  background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.025));
+  box-shadow:var(--shadow);
+}
+
+.journey-card img{
+  height:620px;
+  object-fit:cover;
+  object-position:center;
+  filter:brightness(.82) contrast(1.08);
+}
+
+.journey-label{
+  position:absolute;
+  left:22px;
+  right:22px;
+  bottom:22px;
+  padding:24px;
+  border-radius:20px;
+  background:rgba(0,0,0,.68);
+  backdrop-filter:blur(14px);
+  border:1px solid rgba(255,255,255,.14);
+}
+
+.journey-label h3{
+  color:var(--accent-2);
+  font-size:2rem;
+  line-height:1;
+  margin:8px 0;
+  text-transform:uppercase;
+}
+
+.journey-label p{
+  color:var(--muted);
+}
+
+.journey-arrow{
+  width:58px;
+  height:58px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:linear-gradient(135deg, var(--accent), #8d0909);
+  box-shadow:0 14px 35px rgba(255,47,47,.26);
+}
+
+.journey-arrow i{
+  color:white;
+  font-size:1.2rem;
+}
+
+.arrow-mobile{
+  display: none;
+}
 /* ================= QUOTE ================= */
 
 .quote-section{
@@ -934,6 +1019,43 @@ footer p{
   .promo-box{
     width:100%;
   }
+
+  #gorilla .text{
+    text-align:center;
+    align-items:center;
+  }
+
+  #gorilla h2{
+    text-align:center;
+    margin:0 auto 20px;
+  }
+
+  .gorilla-logo{
+    display:block;
+    margin:20px auto;
+  } 
+
+  .journey-grid{
+    grid-template-columns:1fr;
+  }
+  
+  .journey-arrow{
+    width: 50px;
+    height: 50px;
+    margin:20px auto;
+  }
+
+  .journey-card img{
+    height:520px;
+  }
+  .arrow-desktop{
+    display:none;
+  }
+  
+  .arrow-mobile{
+    display:inline-block;
+  }
+  
 }
 
 @media(max-width:560px){
@@ -972,6 +1094,21 @@ footer p{
   .badges span{
     font-size:.8rem;
     padding:9px 12px;
+  }
+
+  .journey-card img{
+    height:460px;
+  }
+  
+  .journey-label{
+    left:14px;
+    right:14px;
+    bottom:14px;
+    padding:20px;
+  }
+  
+  .journey-label h3{
+    font-size:1.65rem;
   }
 
   .quote-card{
