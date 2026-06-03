@@ -1,233 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>David Jimenez Coaching</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="David Jimenez Coaching helps beginners build confidence, strength, consistency, and proper training fundamentals through fitness." />
+  <title>David Jimenez Coaching</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<header class="hero">
+<header class="site-header" id="top">
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="#top" class="brand">DAVID <span>JIMENEZ</span></a>
 
-<nav>
-<h1>DAVID JIMENEZ</h1>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#coaching">Coaching</a></li>
-<li><a href="#mindset">Mindset</a></li>
-<li><a href="#gorilla">Gorilla Mind</a></li>
-</ul>
-</nav>
-
-<div class="hero-content">
-<h2>Helping You Build Confidence Through Fitness.</h2>
-
-<p>
-You don’t need perfect form, years of experience,
-or confidence to begin your fitness journey.
-You just need a place to start.
-</p>
-
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSclJQXv0Q8Oi8eSfD73Ty0OqbfRwfUGUMosJy8dqUIr_6cp4g/viewform?usp=dialog" class="btn">
-Start Your Journey
-</a>
-</div>
-
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#coaching">Coaching</a></li>
+      <li><a href="#mindset">Mindset</a></li>
+      <li><a href="#gorilla">Gorilla Mind</a></li>
+    </ul>
+  </nav>
 </header>
 
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+
+  <div class="hero-content reveal">
+    <p class="eyebrow">Beginner-friendly fitness coaching</p>
+
+    <h1>Helping You Build Confidence Through Fitness.</h1>
+
+    <p class="hero-text">
+      You don’t need perfect form, years of experience, or confidence to begin your fitness journey.
+      You just need a place to start.
+    </p>
+
+    <div class="hero-actions">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSclJQXv0Q8Oi8eSfD73Ty0OqbfRwfUGUMosJy8dqUIr_6cp4g/viewform?usp=dialog" class="btn btn-primary" target="_blank" rel="noopener">
+        Start Your Journey
+      </a>
+      <a href="#coaching" class="btn btn-ghost">See Coaching</a>
+    </div>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true">
+    <span></span>
+  </div>
+</section>
+
 <!-- ABOUT -->
-<section id="about" class="section split">
+<section id="about" class="section split about-section">
+  <div class="image-frame reveal">
+    <img src="assets/me.jpg" class="about-img" alt="David Jimenez" />
+  </div>
 
-<div>
-<img src="assets/me.jpg" class="about-img" alt="David Jimenez">
-</div>
+  <div class="text reveal">
+    <p class="eyebrow">Meet your coach</p>
+    <h2>Hey, I’m David.</h2>
 
-<div class="text">
-<h2>Hey, I’m David.</h2>
+    <p>
+      If you’re the person who feels intimidated walking into a gym,
+      doesn’t know what workouts to do, or feels like everybody else already knows what they’re doing — I understand that feeling.
+    </p>
 
-<p>
-If you’re the person who feels intimidated walking into a gym,
-doesn’t know what workouts to do, or feels like everybody else already knows what they’re doing — I understand that feeling.
-</p>
+    <p>
+      I’m a certified fitness coach focused on helping beginners build confidence,
+      learn proper training fundamentals, and create a stronger mindset through fitness.
+    </p>
 
-<p>
-I’m a certified fitness coach focused on helping beginners build confidence,
-learn proper training fundamentals, and create a stronger mindset through fitness.
-</p>
+    <p>
+      This is about becoming stronger physically and mentally one step at a time.
+    </p>
 
-<p>
-This is about becoming stronger physically and mentally one step at a time.
-</p>
-
-<div class="badges">
-<span>Certified Trainer</span>
-<span>Beginner Friendly</span>
-<span>Confidence Focused</span>
-<span>Mindset Driven</span>
-</div>
-
-</div>
+    <div class="badges">
+      <span>Certified Trainer</span>
+      <span>Beginner Friendly</span>
+      <span>Confidence Focused</span>
+      <span>Mindset Driven</span>
+    </div>
+  </div>
 </section>
 
 <!-- WHAT WE DO -->
 <section class="section dark-section">
+  <div class="section-heading reveal">
+    <p class="eyebrow">The foundation</p>
+    <h2>What We Focus On</h2>
+  </div>
 
-<h2 class="center">What We Focus On</h2>
+  <div class="cards">
+    <article class="card reveal">
+      <img src="assets/incline.jpg" alt="Incline press training" />
+      <div class="card-content">
+        <i class="fa-solid fa-dumbbell"></i>
+        <h3>Learning Proper Technique</h3>
+        <p>You don’t need to know everything before starting. I’ll help you understand exercises clearly.</p>
+      </div>
+    </article>
 
-<div class="cards">
+    <article class="card reveal">
+      <img src="assets/coach.jpg" alt="Fitness coaching" />
+      <div class="card-content">
+        <i class="fa-solid fa-bolt"></i>
+        <h3>Building Real Confidence</h3>
+        <p>Confidence comes from showing up and improving, not waiting to feel ready.</p>
+      </div>
+    </article>
 
-<div class="card">
-<img src="assets/incline.jpg" alt="">
-<h3>Learning Proper Technique</h3>
-<p>You don’t need to know everything before starting. I’ll help you understand exercises clearly.</p>
-</div>
-
-<div class="card">
-<img src="assets/coach.jpg" alt="">
-<h3>Building Real Confidence</h3>
-<p>Confidence comes from showing up and improving, not waiting to feel ready.</p>
-</div>
-
-<div class="card">
-<img src="assets/bebo1.jpg" alt="">
-<h3>Creating Consistency</h3>
-<p>The goal is sustainable progress, not temporary motivation.</p>
-</div>
-
-</div>
-
+    <article class="card reveal">
+      <img src="assets/bebo1.jpg" alt="Consistent gym training" />
+      <div class="card-content">
+        <i class="fa-solid fa-fire"></i>
+        <h3>Creating Consistency</h3>
+        <p>The goal is sustainable progress, not temporary motivation.</p>
+      </div>
+    </article>
+  </div>
 </section>
 
 <!-- MINDSET -->
 <section id="mindset" class="quote-section">
-
-<div class="quote-overlay">
-<h2>“The question is:”</h2>
-<p>one day... or day one?</p>
-</div>
-
+  <div class="quote-overlay reveal">
+    <p class="eyebrow">Mindset shift</p>
+    <h2>“The question is:”</h2>
+    <p>one day... or day one?</p>
+  </div>
 </section>
 
 <!-- GORILLA MIND -->
-<section id="gorilla" class="section split reverse">
+<section id="gorilla" class="section split reverse gorilla-section">
+  <div class="text reveal">
+    <p class="eyebrow">Official ambassador</p>
+    <h2>Powered By Gorilla Mind</h2>
 
-<div class="text">
+    <img class="gorilla-logo" src="assets/gorilla.png" alt="Gorilla Mind logo" />
 
-<h2>Powered By Gorilla Mind</h2>
+    <p>
+      As an official Gorilla Mind ambassador, I represent a supplement brand trusted by athletes and people serious about performance.
+    </p>
 
-<div class="gorilla-side">
-<img class="gorilla-logo" src="assets/gorilla.png" alt="">
-</div>
+    <p>
+      It stands out for quality formulas, effective ingredients, and real results.
+    </p>
 
-<p>
-As an official Gorilla Mind ambassador, I represent a supplement brand trusted by athletes and people serious about performance.
-</p>
+    <p>
+      From training intensity to daily focus and recovery, it’s part of my standard.
+    </p>
 
-<p>
-It stands out for quality formulas, effective ingredients, and real results.
-</p>
+    <div class="promo-box">
+      <span>Ambassador Code</span>
+      <h3>DAVID</h3>
+      <p>Save 10% using my official ambassador code.</p>
 
-<p>
-From training intensity to daily focus and recovery, it’s part of my standard.
-</p>
+      <a href="https://gorillamind.com/DAVID" target="_blank" rel="noopener" class="btn btn-primary">
+        Shop Gorilla Mind
+      </a>
+    </div>
+  </div>
 
-<div class="promo-box">
-
-<h3>Use Code: DAVID</h3>
-<p>Save 10% using my official ambassador code.</p>
-
-<a href="https://gorillamind.com/DAVID" target="_blank" class="btn">
-Shop Gorilla Mind
-</a>
-
-</div>
-
-</div>
-
-<div class="gorilla-side">
-<img src="assets/gm.jpg" alt="">
-</div>
-
+  <div class="image-frame product-frame reveal">
+    <img src="assets/gm.jpg" alt="Gorilla Mind product" />
+  </div>
 </section>
 
 <!-- COACHING -->
-<section id="coaching" class="coaching">
+<section id="coaching" class="coaching section">
+  <div class="coach-box reveal">
+    <div class="coach-image">
+      <video controls loop playsinline preload="metadata">
+        <source src="assets/trainingvid.mp4" type="video/mp4" />
+      </video>
+    </div>
 
-<div class="coach-box">
+    <div class="coach-content">
+      <p class="eyebrow">1-on-1 support</p>
+      <h2>1-on-1 Coaching</h2>
 
-<div class="coach-image">
-<video controls loop playsinline>
-<source src="assets/trainingvid.mp4" type="video/mp4">
-</video>
-</div>
+      <p>This coaching is built for the person who:</p>
 
-<div class="coach-content">
+      <ul>
+        <li>Feels nervous or awkward in the gym</li>
+        <li>Needs structure and accountability</li>
+        <li>Wants guidance with workouts and form</li>
+        <li>Struggles staying consistent</li>
+        <li>Wants realistic progress without fake promises</li>
+      </ul>
 
-<h2>1-on-1 Coaching</h2>
+      <p>
+        We build confidence, discipline, and strength step by step.
+      </p>
 
-<p>This coaching is built for the person who:</p>
-
-<ul>
-<li>Feels nervous or awkward in the gym</li>
-<li>Needs structure and accountability</li>
-<li>Wants guidance with workouts and form</li>
-<li>Struggles staying consistent</li>
-<li>Wants realistic progress without fake promises</li>
-</ul>
-
-<p>
-We build confidence, discipline, and strength step by step.
-</p>
-
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSclJQXv0Q8Oi8eSfD73Ty0OqbfRwfUGUMosJy8dqUIr_6cp4g/viewform?usp=dialog" class="btn">
-Apply For Coaching
-</a>
-
-</div>
-
-</div>
-
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSclJQXv0Q8Oi8eSfD73Ty0OqbfRwfUGUMosJy8dqUIr_6cp4g/viewform?usp=dialog" target="_blank" rel="noopener" class="btn btn-primary">
+        Apply For Coaching
+      </a>
+    </div>
+  </div>
 </section>
 
 <!-- QUOTES -->
-<section class="gallery">
+<section class="gallery section">
+  <article class="quote-card reveal">
+    <span>01</span>
+    <h2>CONSISTENCY</h2>
+    <p>You don’t need motivation every day. You need standards.</p>
+  </article>
 
-<div class="quote-card">
-<h2>CONSISTENCY</h2>
-<p>You don’t need motivation every day. You need standards.</p>
-</div>
+  <article class="quote-card reveal">
+    <span>02</span>
+    <h2>CONFIDENCE</h2>
+    <p>Confidence is built through repetition.</p>
+  </article>
 
-<div class="quote-card">
-<h2>CONFIDENCE</h2>
-<p>Confidence is built through repetition.</p>
-</div>
-
-<div class="quote-card">
-<h2>MINDSET</h2>
-<p>Your body follows where your mind leads.</p>
-</div>
-
+  <article class="quote-card reveal">
+    <span>03</span>
+    <h2>MINDSET</h2>
+    <p>Your body follows where your mind leads.</p>
+  </article>
 </section>
+
+</main>
 
 <!-- FOOTER -->
 <footer>
+  <div class="footer-inner">
+    <h2>David Jimenez Coaching</h2>
+    <p>Helping beginners build confidence through fitness.</p>
 
-<h2>David Jimenez Coaching</h2>
-
-<p>Helping beginners build confidence through fitness.</p>
-
-<p>
-<a href="https://instagram.com/dahveed.j" target="_blank">
-<i class="fa-brands fa-instagram"></i> @dahveed.j
-</a>
-</p>
-
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#coaching">Coaching</a>
+      <a href="#gorilla">Gorilla Mind</a>
+      <a href="https://instagram.com/dahveed.j" target="_blank" rel="noopener">
+        <i class="fa-brands fa-instagram"></i> @dahveed.j
+      </a>
+    </div>
+  </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
