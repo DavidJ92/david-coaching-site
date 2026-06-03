@@ -691,6 +691,50 @@ a{
   letter-spacing:1px;
 }
 
+/* ================= INSTAGRAM ================= */
+
+.instagram-section{
+  width:min(var(--max), calc(100% - 40px));
+  margin:0 auto;
+  padding:100px 30px;
+  text-align:center;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.05),
+      rgba(255,255,255,.02)
+    );
+
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+
+  box-shadow:var(--shadow);
+}
+
+.instagram-section h2{
+  font-size:clamp(2.2rem,5vw,4rem);
+  line-height:1;
+  letter-spacing:-2px;
+  text-transform:uppercase;
+
+  margin-bottom:20px;
+}
+
+.instagram-section p:not(.eyebrow){
+  max-width:650px;
+  margin:0 auto 30px;
+  color:var(--muted);
+}
+
+.instagram-section .btn{
+  gap:10px;
+}
+
+.instagram-section .fa-instagram{
+  font-size:1.1rem;
+}
+
 /* ================= FOOTER ================= */
 
 footer{
@@ -732,6 +776,24 @@ footer p{
 
 .footer-links a:hover{
   color:white;
+}
+
+.footer-social{
+  margin-top:25px;
+}
+
+.footer-social a{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  color:white;
+  font-weight:600;
+  transition:.25s ease;
+}
+
+.footer-social a:hover{
+  transform:translateY(-2px);
+  opacity:.85;
 }
 
 /* ================= REVEAL ANIMATIONS ================= */
@@ -914,6 +976,14 @@ footer p{
 
   .quote-card{
     min-height:220px;
+  }
+
+  .instagram-section{
+    padding:70px 25px;
+  }
+  
+  .instagram-section h2{
+    font-size:2.4rem;
   }
 
   footer h2{
